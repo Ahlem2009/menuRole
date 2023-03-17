@@ -1,0 +1,14 @@
+<!-- <button (click)="Getprofil()">AAA</button> -->
+
+<div  *ngFor="let item of users">
+<ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0" *ngFor="let data of item.menus">
+  <ngb-panel title={{data.label}}>
+     <ng-template ngbPanelContent >
+     <li *ngFor="let info of data.sousLabel">
+
+       {{info}}
+     </li> 
+    </ng-template> 
+  </ngb-panel>
+  </ngb-accordion>
+</div>

@@ -1,0 +1,37 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile":[
+    {
+      "id":1,
+      "role": "admin",
+      "menus": [
+         { "label": "Doc","sousLabel":["Consulter doc" , "Modifier doc" ] },
+        { "label": "Ticket","sousLabel" : ["Consulter Ticket" , "Creer ticket","Assigner ticket a","Cloturer ticket"] },
+        { "label": "Gestion des utilisateurs", "sousLabel" : ["Consulter les clients" , "Consulter les experts","Consulter les menagers"] }
+        
+      ]
+    },
+    {
+      "id":2,
+      "role": "utilisateur",
+      "menus": [
+         { "label": "Doc","sousLabel":["Consulter doc" ] },
+        { "label": "Ticket","sousLabel" : ["Consulter Ticket" ,"Creer ticket", "Cloturer ticket"] },
+        { "label": "Gestion du compte", "sousLabel" : ["Modifier le mot de passe" , "mise a jour les données personnelles"] }
+      ]
+    }
+]
+}
